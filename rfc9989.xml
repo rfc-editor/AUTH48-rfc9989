@@ -2452,7 +2452,7 @@ also does not exist.</t>
 
 <section anchor="organizational-domain-discovery-issues"><name>Organizational Domain Discovery Issues</name>
 
-<t>An earlier informational version of the DMARC mechanism <xref target="RFC7489"/>
+<t>An earlier Informational version of the DMARC mechanism <xref target="RFC7489"/>
 noted that the DNS does not provide a method by which the "domain of record",
 or the domain that was actually registered with a domain registrar, can
 be determined given an arbitrary domain name. That version further mentioned
