@@ -1,8 +1,8 @@
-# AUTH48 for RFC-to-be XXXX <draft-XX> (in XML)
+# AUTH48 for RFC-to-be 9989 <draft-ietf-dmarc-dmarcbis-41> (in XML)
 
-This repository is for managing document updates for RFC XXXX during AUTH48. This is part of the [pilot GitHub-based process for AUTH48](https://www.rfc-editor.org/rpc/wiki/doku.php?id=rpc_github_roadmap), and it emulates the [current AUTH48 procedure](https://www.rfc-editor.org/pubprocess/auth48/). 
+This repository is for managing document updates for RFC 9989 during AUTH48. This is part of the [pilot GitHub-based process for AUTH48](https://www.rfc-editor.org/rpc/wiki/doku.php?id=rpc_github_roadmap), and it emulates the [current AUTH48 procedure](https://www.rfc-editor.org/pubprocess/auth48/). 
 
-Please see the [License](https://github.com/rfc-editor/rfcNNNN-AUTH48/blob/main/LICENSE.md). The [IETF Note Well](https://github.com/rfc-editor/rfcNNNN-AUTH48/blob/main/note-well.md) applies.
+Please see the [License](https://github.com/rfc-editor/rfc9989-AUTH48/blob/main/LICENSE.md). The [IETF Note Well](https://github.com/rfc-editor/rfc9989-AUTH48/blob/main/note-well.md) applies.
 
 GitHub features that will be used:
 * Issue tracking
@@ -14,7 +14,7 @@ Authors, AD, WG chairs, and document shepherd, please ensure that your GitHub no
 This document is being edited in RFCXML.  Your approval means you approve both the content and format of the document, and the RFC is ready for publication.
 
 ## Pull Requests and Issue Tracking
-The initial version of rfcXXXX.xml is a copy of the Internet-Draft (in XML) as it was approved for publication. A PR has been created that contains all the edits made by the RFC Production Center. This emulates the starting state of the [current AUTH48 procedure](https://www.rfc-editor.org/pubprocess/auth48/). For the issues, provide your answers in the comments or add PRs to address them.  
+The initial version of rfc9989.xml is a copy of the Internet-Draft (in XML) as it was approved for publication. A PR has been created that contains all the edits made by the RFC Production Center. This emulates the starting state of the [current AUTH48 procedure](https://www.rfc-editor.org/pubprocess/auth48/). For the issues, provide your answers in the comments or add PRs to address them.  
 
 Feel free to add new issues and PRs for new edits and questions. Use @mention to identify the participant who should answer.
 
@@ -29,10 +29,10 @@ If the RFC Editor creates the PR in response to issue comments, the RFC Editor w
 
 In addition to the files available in GitHub, the following files are available for your review:
 
-* [https://www.rfc-editor.org/authors/rfcNNNN.html](https://www.rfc-editor.org/authors/rfcNNNN.html)
-* [https://www.rfc-editor.org/authors/rfcNNNN.pdf](https://www.rfc-editor.org/authors/rfcNNNN.pdf)
-* [https://www.rfc-editor.org/authors/rfcNNNN.txt](https://www.rfc-editor.org/authors/rfcNNNN.txt)
-* [https://www.rfc-editor.org/authors/rfcNNNN.xml](https://www.rfc-editor.org/authors/rfcNNNN.xml)
+* [https://www.rfc-editor.org/authors/rfc9989.html](https://www.rfc-editor.org/authors/rfc9989.html)
+* [https://www.rfc-editor.org/authors/rfc9989.pdf](https://www.rfc-editor.org/authors/rfc9989.pdf)
+* [https://www.rfc-editor.org/authors/rfc9989.txt](https://www.rfc-editor.org/authors/rfc9989.txt)
+* [https://www.rfc-editor.org/authors/rfc9989.xml](https://www.rfc-editor.org/authors/rfc9989.xml)
 
 To create your own output files, use the [IETF Author Tools webservice](https://author-tools.ietf.org/).
 
@@ -40,15 +40,15 @@ To create your own output files, use the [IETF Author Tools webservice](https://
 Information on using GitHub to view diffs can be found here: [Comparing commits](https://docs.github.com/en/github/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits).
 
 The following diff files are available via www.rfc-editor.org:
-* [https://www.rfc-editor.org/authors/rfcNNNN-diff.html](https://www.rfc-editor.org/authors/rfcNNNN-diff.html) (all changes since the document entered the RFC Editor Queue)
-* [https://www.rfc-editor.org/authors/rfcNNNN-rfcdiff.html](https://www.rfc-editor.org/authors/rfcNNNN-rfcdiff.html) (side-by-side view of all changes since the document entered the RFC Editor Queue)
+* [https://www.rfc-editor.org/authors/rfc9989-diff.html](https://www.rfc-editor.org/authors/rfc9989-diff.html) (all changes since the document entered the RFC Editor Queue)
+* [https://www.rfc-editor.org/authors/rfc9989-rfcdiff.html](https://www.rfc-editor.org/authors/rfc9989-rfcdiff.html) (side-by-side view of all changes since the document entered the RFC Editor Queue)
 
 ## Approving the Document
 **Authors** To approve your RFC for publication, **please reply to the AUTH48 email** stating that you approve this RFC for publication.  Please use **REPLY ALL**, as all the parties CC’ed on the message need to see your approval.
 
 **ADs** - To approve any changes that are beyond editorial, **please reply to the AUTH48 email** (using **REPLY ALL**) so everyone is aware of the approval.  
 
-The details of the AUTH48 status of the document are here: [https://www.rfc-editor.org/auth48/rfcNNNN](https://www.rfc-editor.org/auth48/rfcNNNN)
+The details of the AUTH48 status of the document are here: [https://www.rfc-editor.org/auth48/rfc9989](https://www.rfc-editor.org/auth48/rfc9989)
 
 ## About This Repo
 Note that this repo is available only during AUTH48. This repo will be archived after the RFC publication announcement is sent. 
