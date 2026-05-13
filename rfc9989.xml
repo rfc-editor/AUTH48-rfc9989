@@ -565,8 +565,10 @@ are discussed below in <xref target="policy-enforcement-considerations"/>.</t>
 <t><xref target="RFC3986"/> defines a syntax for identifying a resource. The DMARC
 mechanism uses this as the format by which a <xref target="domain-owner">Domain Owner</xref>
 or <xref target="public-suffix-operator">PSO</xref> specifies the destination(s) for the two
-report types that are supported. The <xref target="policy-record-format">DMARC Policy Record format</xref>
-allows for a list of these URIs to be provided, with each URI separated by commas (ASCII 0x2c).</t>
+report types that are supported.</t>
+<t>The <xref target="policy-record-format">DMARC Policy Record format</xref>
+allows for a list of these URIs to be provided, with each URI separated by commas (ASCII 0x2c).
+A report SHOULD be sent to each listed URI provided in the DMARC Policy Record.</t>
 <t>A formal definition is provided in <xref target="formal-definition"/>.</t>
 </section>
 
@@ -3178,7 +3180,7 @@ reports or failure reports, <xref target="RFC7489"/> stated:</t>
   will send reports but <bcp14>MUST</bcp14> support the ability to send to at least
   two.</blockquote>
 
-<t><xref target="dmarc-uris"/> of this document says:</t>
+<t><xref target="dmarc-uris"/> of this document includes this text:</t>
 
 <blockquote>A report <bcp14>SHOULD</bcp14> be sent to each listed URI provided in the DMARC 
   Policy Record.</blockquote>
