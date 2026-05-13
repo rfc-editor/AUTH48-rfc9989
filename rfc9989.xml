@@ -920,14 +920,15 @@ The ABNF rule for each dmarc-value is specified in the following table:</t>
                                                                                                                                                    
   MSA = Mail Submission Agent                                                                  
   MDA = Mail Delivery Agent  
+  sMTA = sending MTA
+  rMTA = receiving MT
 </artwork>
 <t>The above diagram shows a typical flow of messages through a
 DMARC-aware system. Dashed lines (e.g., --&gt;) denote the actual message
 flow, dotted lines (e.g., &lt; . . &gt;) represent DNS queries used to retrieve
 message policy related to the supported message authentication schemes,
 and starred lines (e.g., &lt;**&gt;) indicate data exchange between message-handling
-modules and message authentication modules. "sMTA" is the sending MTA, and
-"rMTA" is the receiving MTA.</t>
+modules and message authentication modules.</t>
 <t>Put simply, when a message reaches a DMARC-aware rMTA, a DNS query
 will be initiated to determine if a DMARC Policy Record exists that applies
 to the Author Domain. If a DMARC Policy Record is found, the rMTA will use
