@@ -1090,10 +1090,10 @@ message being temporarily rejected (i.e., an SMTP 4yx reply), which
 invites the sending MTA to try again after the condition has possibly
 cleared, allowing a definite DMARC conclusion to be reached ("fail
 closed").</t>
-<t>Note: PSD policy is not used for Organizational Domains that have
+<aside><t>Note: PSD policy is not used for Organizational Domains that have
 published a DMARC Policy Record. Specifically, this is not a mechanism to
 provide feedback addresses (rua/ruf) when an Organizational Domain has
-declined to do so.</t>
+declined to do so.</t></aside>
 </section>
 
 <section anchor="identifier-alignment-evaluation"><name>Identifier Alignment Evaluation</name>
@@ -1111,7 +1111,7 @@ being evaluated.</li>
 <li>Any DKIM-Authenticated Identifier if one or more DKIM "pass" results exist for
 the message being evaluated.</li>
 </ul>
-<t>Note: There is no need to perform Identifier Alignment Evaluations under any of
+<t>There is no need to perform Identifier Alignment Evaluations under any of
 the following conditions:</t>
 
 <ul spacing="normal">
