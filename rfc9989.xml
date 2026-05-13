@@ -2497,7 +2497,7 @@ of 0 took on unintended significance as a value used by some intermediaries
 and mailbox providers as an indicator to deviate from standard handling of
 the message, usually by rewriting the RFC5322.From header field in an effort to
 avoid DMARC failures downstream.</t>
-<t>These custom actions when the "pct" tag was set to 0 proved value to the
+<t>These custom actions when the "pct" tag was set to 0 proved valuable to the
 email community. In particular, header field rewriting by an intermediary meant
 that a Domain Owner's aggregate reports could reveal to the Domain Owner
 how much of its traffic was routing through intermediaries that don't rewrite
