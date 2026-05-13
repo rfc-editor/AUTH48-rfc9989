@@ -2312,7 +2312,7 @@ interpreted to indicate that the PSD is the Organizational Domain.</t>
 <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8601.xml"/>
 </references>
 <references><name>Informative References</name>
-<reference anchor="M3AUTH" target="https://www.m3aawg.org/sites/default/files/m3aawg-email-authentication-recommended-best-practices-09-2020.pdf">
+<reference anchor="M3AUTH" target="https://www.m3aawg.org/sites/default/files/doc_files/m3aawg-email-authentication-recommended-best-practices-09-2020.pdf">
   <front>
     <title>M3AAWG Email Authentication Recommended Best Practices</title>
     <author>
@@ -2320,7 +2320,7 @@ interpreted to indicate that the PSD is the Organizational Domain.</t>
     </author>
   </front>
 </reference>
-<reference anchor="M3SPF" target="https://www.m3aawg.org/Managing-SPF-Records">
+<reference anchor="M3SPF" target="https://www.m3aawg.org/sites/default/files/doc_files/m3aawg_managing-spf_records-2017-08.pdf">
   <front>
     <title>M3AAWG Best Practices for Managing SPF Records</title>
     <author>
