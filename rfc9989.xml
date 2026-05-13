@@ -1177,13 +1177,18 @@ three unique entities -- Domain Owners, PSOs, and Mail Receivers.</t>
 
 <section anchor="domain-owner-actions"><name>Domain Owner Actions</name>
 
-<t>A <xref target="domain-owner">Domain Owner</xref> wishing to fully participate in DMARC will
-publish a <xref target="dmarc-policy-record">DMARC Policy Record</xref> to cover each <xref target="author-domain">Author Domain</xref> and corresponding <xref target="organizational-domain">Organizational Domain</xref>
-to which DMARC validation should apply; will send email that produces at least one --
+<t>A <xref target="domain-owner">Domain Owner</xref> wishing to fully participate in DMARC will:</t>
+<ul>
+<li>Publish a <xref target="dmarc-policy-record">DMARC Policy Record</xref> to cover each <xref target="author-domain">Author Domain</xref> and corresponding <xref target="organizational-domain">Organizational Domain</xref>
+to which DMARC validation should apply;</li>
+<li>Send email that produces at least one --
 preferably two -- <xref target="authenticated-identifiers">Authenticated Identifiers</xref> that align
-with the Author Domain; will receive and monitor the content of DMARC aggregate
-reports; and will correct any authentication shortcomings in mail making authorized
-use of its domains.</t>
+with the Author Domain;</li>
+<li>Receive and monitor the content of DMARC aggregate
+reports;</li>
+<li>Correct authentication shortcomings in mail making authorized
+use of its domains.</li>
+</ul>
 <t>The following sections describe how to achieve this.</t>
 
 <section anchor="publish-an-spf-record-for-an-aligned-domain"><name>Publish an SPF Record for an Aligned Domain</name>
