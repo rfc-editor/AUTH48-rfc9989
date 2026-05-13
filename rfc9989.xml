@@ -718,7 +718,7 @@ policy.  See <xref target="external-report-addresses"/> for additional considera
 <dt>sp:</dt>
 <dd><t>Domain Owner Assessment Policy for all subdomains of the given Organizational Domain
 (plain-text; <bcp14>OPTIONAL</bcp14>). Indicates the message handling preference of the Domain Owner
-or PSO for mail using an existing subdomain of the prevailing Organizational Domain for
+or PSO for mail using an existing subdomain of the prevailing Organizational Domain
 and not passing DMARC validation. It applies only to existing subdomains of the message's
 Organizational Domain in the DNS hierarchy and not to the Organizational Domain itself.
 Its syntax is identical to that of the "p" tag defined above. If both the "sp" tag is
