@@ -351,7 +351,7 @@ these reports and the organizations that operate those components.</t>
 Consumer is also the <xref target="domain-owner">Domain Owner</xref> or <xref target="public-suffix-operator">PSO</xref>
 or concerning domains that belong to another operator entirely. The DMARC mechanism
 permits a Domain Owner to act as a Report Consumer for its domain(s) and/or to
-designate third parties to so act. See <xref target="external-report-addresses"/> for further
+designate a third party to act as a Report Consumer. See <xref target="external-report-addresses"/> for further
 discussion of such designation.</t>
 </section>
 </section>
