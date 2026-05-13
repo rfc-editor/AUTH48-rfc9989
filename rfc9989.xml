@@ -768,7 +768,7 @@ tag is not the first in the list, the tag is absent, or the value is not
 
 <section anchor="formal-definition"><name>Formal Definition</name>
 
-<t>A DMARC Policy Record <bcp14>MUST</bcp14> comply with the formal definition of same
+<t>A DMARC Policy Record <bcp14>MUST</bcp14> comply with the formal definition
 found in this section. Unknown tags <bcp14>MUST</bcp14> be ignored. Syntax errors
 in the remainder of the record <bcp14>MUST</bcp14> be discarded in favor of
 default values (if any) or ignored outright.</t>
