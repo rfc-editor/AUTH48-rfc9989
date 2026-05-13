@@ -526,7 +526,8 @@ simply by not publishing a DMARC Policy Record for its Author Domain(s).</t>
 <t>DMARC Policy Records can also apply to subdomains of the name at which they
 are published in the DNS if the record is published at an <xref target="organizational-domain">Organizational
 Domain</xref> for the subdomains. The <xref target="domain-owner-policy">Domain Owner Assessment Policy</xref> that applies to the subdomains can be identical to the Domain
-Owner Assessment Policy that applies to the Organizational Domain or different, depending
+Owner Assessment Policy that applies to the Organizational Domain but it does not have to
+be identical. Whether or not it is identical depends
 on the presence or absence of certain values in the DMARC Policy Record. See <xref target="policy-record-format"/>
 for more details.</t>
 <t>DMARC's use of the Domain Name Service is driven by DMARC's use of domain
