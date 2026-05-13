@@ -329,7 +329,7 @@ For example, "ietf.org" is a registered domain name, and ".org" is its PSD.</t>
 </section>
 
 <section anchor="public-suffix-operator"><name>Public Suffix Operator (PSO)</name>
-<t>A Public Suffix Operator is an organization that manages operations
+<t>A PSO is an organization that manages operations
 within a PSD, particularly the DNS records published for names at and
 under that domain name.</t>
 </section>
@@ -966,7 +966,7 @@ method for determining the Organizational Domain could be created, that method s
 replace reliance on a PSL.</t>
 <t>This update to DMARC offers more flexibility to Domain Owners, especially those with large,
 complex organizations that might want to apply decentralized management to their DNS and their
-DMARC Policy Records. Rather than just using a Public Suffix List to help identify
+DMARC Policy Records. Rather than just using a PSL to help identify
 an Organizational Domain, this update defines a discovery technique known colloquially as
 the "DNS Tree Walk". The target of any DNS Tree Walk is discovery of a valid DMARC Policy Record,
 and its use in determining an Organizational Domain allows for publishing DMARC Policy Records
@@ -1040,7 +1040,7 @@ of the following locations, listed from highest preference to lowest:</t>
 <ul spacing="normal">
 <li>The Author Domain</li>
 <li>The Organizational Domain of the Author Domain</li>
-<li>The Public Suffix Domain of the Author Domain</li>
+<li>The PSD of the Author Domain</li>
 </ul>
 <t>Policy discovery first starts with a query for a valid DMARC Policy Record at the
 name created by prepending the label "_dmarc" to the Author Domain of the
@@ -1064,7 +1064,7 @@ Domain as described starting in step 3 of <xref target="dns-tree-walk"/>.</li>
 <t>If the DMARC Policy Record to be applied is that of the Author Domain, then the
 Domain Owner Assessment Policy is taken from the "p" tag of the record.</t>
 <t>If the DMARC Policy Record to be applied is that of either the Organizational Domain or the
-Public Suffix Domain and the Author Domain is a subdomain of that domain, then the Domain
+PSD and the Author Domain is a subdomain of that domain, then the Domain
 Owner Assessment Policy is taken from the "sp" tag (if any) if the Author Domain exists
 or the "np" tag (if any) if the Author Domain does not exist. In the absence of
 applicable "sp" or "np" tags, the "p" tag policy is used for subdomains.</t>
@@ -1466,7 +1466,7 @@ modify existing mail handling processes.</t>
 
 <section anchor="dmarc-feedback"><name>DMARC Feedback</name>
 <t>DMARC feedback is described in <xref target="RFC9990"/>.</t>
-<t>As an operational note for Public Suffix Operators, feedback for non-existent
+<t>As an operational note for PSOs, feedback for non-existent
 domains can be desirable and useful, just as it can be for Organizational
 Domains. Therefore, both such entities should consider including "rua=" tags
 in any DMARC Policy Records they publish for themselves. See <xref target="privacy-considerations"/>
@@ -1985,7 +1985,7 @@ and Mail Receivers.  The "status" column is one of the following:</t>
 
 <section anchor="underscored-and-globally-scoped-dns-node-names-registry-update"><name>Underscored and Globally Scoped DNS Node Names Registry Update</name>
 <t>The names of DNS Resource Records (RRs) beginning with an underscore character that are globally scoped (as per <xref target="RFC8552"/>) are registered with IANA in the "Underscored and Globally Scoped DNS Node Names" registry within the "Domain Name System (DNS) Parameters" registry group.</t>
-<t>In addition to a reference to a permanent specification, each registration contains the DNS Resource Record (RR) type and Node Name.
+<t>In addition to a reference to a permanent specification, each registration contains the DNS RR type and Node Name.
 The designated expert needs to confirm that the provided specification adequately describes the Node
 Name and clearly presents how it would be used within the DMARC context by Domain Owners and
 Mail Receivers.</t>
@@ -2443,7 +2443,7 @@ policy is to be applied and when.</t>
 there would be an agreed-upon standard for determining a domain's existence.</t>
 <t>Since the DMARC mechanism is focused on email, one might think that the
 definition of "resolvable" in <xref target="RFC5321"/> applies. Using that definition, only
-names that resolve to MX Resource Records (RRs), A RRs, or AAAA RRs are deemed
+names that resolve to MX RRs, A RRs, or AAAA RRs are deemed
 to be resolvable and to exist in the DNS. This is a common practice among Mail
 Receivers to determine whether or not to accept a mail message before performing
 other more expensive processing.</t>
@@ -2451,7 +2451,7 @@ other more expensive processing.</t>
 RRs in order for a domain to exist; instead, if any RR exists for a domain, then
 the domain exists. To use the terminology from <xref target="RFC2308"/>, an "NXDOMAIN" response
 (rcode "Name Error") to a DNS query means that the domain name does not exist,
-while a "NODATA" response (rcode "NOERROR") means that the given Resource Record
+while a "NODATA" response (rcode "NOERROR") means that the given RR
 type queried for does not exist, but the domain name does.</t>
 <t>Furthermore, in keeping with <xref target="RFC8020"/>, if a query for a name returns NXDOMAIN,
 then not only does the name not exist, every name below it in the DNS hierarchy
@@ -2465,7 +2465,7 @@ noted that the DNS does not provide a method by which the "domain of record",
 or the domain that was actually registered with a domain registrar, can
 be determined given an arbitrary domain name. That version further mentioned
 suggestions that have been made that attempt to glean such information from
-SOA or NS Resource Records, but these too are not fully reliable, as the
+SOA or NS RRs, but these too are not fully reliable, as the
 partitioning of the DNS is not always done at administrative boundaries.</t>
 <t>That previous version posited that one could "climb the tree" to find the
 Organizational Domain but expressed concern that an attacker could exploit
@@ -2729,7 +2729,7 @@ publish an additional DMARC Policy Record as follows:</t>
 <ul spacing="normal">
 <li>Given the DMARC Policy Record published by the Domain Owner at
 "_dmarc.example.com", the DNS administrator for the Report Consumer
-will need to publish a TXT Resource Record at
+will need to publish a TXT RR at
 "example.com._report._dmarc.thirdparty.example.net" with the value
 "v=DMARC1;" to authorize receipt of the reports.</li>
 </ul>
@@ -3108,7 +3108,7 @@ RFC.</t>
 
 <section anchor="policy-determination"><name>Policy Discovery and Organizational Domain Determination</name>
 <t>The algorithms for DMARC policy discovery and for determining the Organizational Domain
-have been changed. Specifically, reliance on a Public Suffix List (PSL) has been replaced
+have been changed. Specifically, reliance on a PSL has been replaced
 by a technique called a "DNS Tree Walk", and the methodology for the DNS Tree Walk is explained
 in detail in this document.</t>
 <t>The DNS Tree Walk also incorporates PSD policy discovery, which was introduced in
@@ -3139,7 +3139,7 @@ dedicated to the topics.</t>
 
 <dl spacing="normal" newline="false">
 <dt>np:</dt> <dd>Policy for non-existent domains (imported from <xref target="RFC9091"/>).</dd>
-<dt>psd:</dt> <dd>Flag indicating whether a domain is a Public Suffix Domain.</dd>
+<dt>psd:</dt> <dd>Flag indicating whether a domain is a PSD.</dd>
 <dt>t:</dt> <dd>Replacement for some "pct" tag functionality. See <xref target="removal-of-the-pct-tag"/> for further discussion.</dd>
 </dl>
 </section>
@@ -3237,7 +3237,7 @@ this erratum no longer exists.</t>
 </section>
 
 <section anchor="rfc-errata-erratum-id-6729-rfc-7489-section-3-2-https-www-rfc-editor-org-errata-eid6729"><name>RFC Errata, Erratum ID 6729, RFC 7489, Section 3.2</name>
-<t>See <eref target="https://www.rfc-editor.org/errata/eid6729" brackets="angle"/>. This erratum is in reference to a search of the Public Suffix List (PSL) as part of finding a DMARC
+<t>See <eref target="https://www.rfc-editor.org/errata/eid6729" brackets="angle"/>. This erratum is in reference to a search of the PSL as part of finding a DMARC
 Policy Record (a.k.a., Domain Owner Assessment Policy). The PSL is no longer relied upon for this
 practice, and the text at issue has been removed from this document.</t>
 </section>
