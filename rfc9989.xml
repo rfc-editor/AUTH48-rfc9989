@@ -27,7 +27,11 @@
     <date month="May" year="2026"/>
     <area>ART</area>
     <workgroup>dmarc</workgroup>
-
+	<keyword>DMARC</keyword>
+	<keyword>DKIM</keyword> 
+	<keyword>SPF</keyword> 
+	<keyword>Email</keyword>
+	<keyword>Authentication</keyword>
 <abstract>
 <t>This document describes the Domain-based Message Authentication,
 Reporting, and Conformance (DMARC) protocol.</t>
