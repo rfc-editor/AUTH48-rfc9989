@@ -341,7 +341,7 @@ under that domain name.</t>
 <section anchor="pso-controlled-domain-names"><name>PSO-Controlled Domain Names</name>
 <t>PSO-Controlled Domain Names are names in the DNS that are managed by
 a PSO. PSO-Controlled Domain Names may have one label (e.g., ".com") or more
-(e.g., ".co.uk"), depending on the PSD's policy.</t>
+(e.g., ".co.uk"), depending on the PSO's policy.</t>
 </section>
 
 <section anchor="report-consumer"><name>Report Consumer</name>
@@ -2681,7 +2681,7 @@ authentication failures occur.</t>
 <t>Not all Mail Receivers will honor such a request, but the Domain Owner
 feels that any reports it does receive will be helpful enough to
 justify publishing this record. The default per-message failure report
-format <xref target="RFC6591"/> meets the Domain Owner's needs in this scenario.</t>
+format <xref target="RFC9991"/> meets the Domain Owner's needs in this scenario.</t>
 <t>The Domain Owner accomplishes this by adding the following to its
 DMARC Policy Record from <xref target="entire-domain-monitoring-mode"/>:</t>
 
